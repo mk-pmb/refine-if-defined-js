@@ -1,0 +1,28 @@
+{ "name": "refine-if-defined",
+  "version": "0.1.0",
+  "description": "If a value is defined (!== undefined), call a function to potentially refine it.",
+  "keywords": [],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/refine-if-defined-js/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/refine-if-defined-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/refine-if-defined-js/issues"
+  },
+  "contributors": [],
+
+  "private": false, "license": "ISC",
+
+  "main": "rid.js",
+  "scripts": { "test": "nodejs test/all.js" },
+  "directories": { "test": "test" },
+
+  "dependencies": {},
+  "devDependencies": {},
+
+
+  "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"
+}
