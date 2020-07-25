@@ -16,17 +16,25 @@ API
 
 This module exports one function:
 
-### refineIfDefined([how[, opt]])(val)
+### refineIfDefined([how])(val)
 
-If `val` is undefined, return it.
+If `how` is false-y, or `val` is undefined, return `val`.
 Otherwise, call `how(val)` to obtain a possible replacement `better`.
 If `better` is defined (i.e. not undefined), return it;
 else return the original `val`.
 
-`opts` is an optional options object that supports these keys:
 
-* `async`: Boolean, whether `better` should be treated as a potential promise.
-  When enabled, the result of `refineIfDefined` will be a Promise.
+
+Promise support
+---------------
+
+There's also a submodule `refine-if-defined/pr.js` that exports one function:
+
+### promisedRefineIfDefined([how])(val)
+
+It works as above but with async/Promise support in all parts.
+Will always return a Promise.
+
 
 
 
